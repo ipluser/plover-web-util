@@ -1,0 +1,41 @@
+{
+  "name": "plover-web-util",
+  "version": "1.0.0",
+  "description": "【插件】集成常用web中间件，提供通用web功能。",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint lib test",
+    "test": "mocha --require should --reporter spec --recursive --bail --check-leaks --timeout 10000 test/",
+    "cov": "istanbul cover _mocha -- --require should --recursive --bail --check-leaks --timeout 10000 test/ -R spec",
+    "travis": "istanbul cover _mocha --report lcovonly -- --require should --recursive --bail --check-leaks --timeout 10000 test/ -R spec",
+    "ci": "npm run lint && npm run test && npm run travis",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -o CHANGELOG.md -s"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "plover-logger": "~1.3.0"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "~1.1.1",
+    "eslint": "~2.8.0",
+    "eslint-config-bce": "~1.2.0",
+    "istanbul": "~0.4.1",
+    "mocha": "~2.4.5",
+    "should": "~8.3.1"
+  },
+  "plover": {
+    "plugin": "lib/plugin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plover-modules/plover-web-util.git"
+  },
+  "author": "bencode@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plover-modules/plover-web-util/issues"
+  },
+  "homepage": "https://github.com/plover-modules/plover-web-util#readme"
+}
