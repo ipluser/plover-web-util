@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "debug": "~2.2.0",
+    "koa-bodyparser": "~2.0.1",
     "koa-conditional-get": "~1.0.3",
     "koa-etag": "~2.1.1",
     "koa-favicon": "~1.2.1",
@@ -37,7 +38,7 @@
     "supertest": "~1.2.0"
   },
   "plover": {
-    "plugin": "lib/plugin"
+    "plugin": "lib/plugin.js"
   },
   "repository": {
     "type": "git",

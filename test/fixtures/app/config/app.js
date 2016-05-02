@@ -11,7 +11,9 @@ module.exports = {
     favicon: pathUtil.join(__dirname, '../public/favicon.ico'),
     rtime: {},
     conditional: {},
-    etag: {}
+    etag: {},
+
+    bodyParser: {}
   }
 };
 
